@@ -1,0 +1,23 @@
+# HGAuto settings. HungerGameSSS remains responsible for game mechanics and its procedural dungeons.
+world-prefix: hga_world
+cornucopia-theme: random  # random, or one of the 13 supported themes
+spawn-points: 24
+spawn-radius: 55
+max-players: 24
+launch-delay-seconds: 15
+world-unload-delay-seconds: 120
+end-detection:
+  empty-world-seconds: 45
+  minimum-run-seconds: 90
+modes:
+  solo:
+    min-players: 2
+  duo:
+    min-players: 4
+  squad:
+    min-players: 8
+messages:
+  prefix: '§8[§6HGAuto§8] §r'
+lobby:
+  # Set this in-game by standing at your lobby and using /br setlobby.
+  world: ''
