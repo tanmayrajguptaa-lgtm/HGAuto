@@ -1,0 +1,30 @@
+name: HGAuto
+version: 1.2.0
+main: io.tanmay.hgauto.HGAuto
+api-version: '1.21'
+author: OpenAI
+website: https://modrinth.com/plugin/hungergamesss
+softdepend: [HungerGameSSS, HungerGamesSSS, GrimAC]
+description: Automates fresh-world matchmaking for HungerGameSSS v4.5.9 and Java 25. One active match at a time.
+commands:
+  br:
+    description: Hunger Games matchmaking and admin controls
+    usage: /br play <solo|duo|squad>
+    aliases: [battleauto, hgauto]
+    permission: hgauto.use
+  solo:
+    description: Join/create the solo Hunger Games queue
+    permission: hgauto.use
+  duo:
+    description: Join/create the duo Hunger Games queue
+    permission: hgauto.use
+  squad:
+    description: Join/create the squad Hunger Games queue
+    permission: hgauto.use
+permissions:
+  hgauto.use:
+    description: Use Hunger Games auto-matchmaking commands
+    default: true
+  hgauto.admin:
+    description: Configure and manage HGAuto
+    default: op
